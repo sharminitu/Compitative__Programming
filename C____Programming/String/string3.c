@@ -1,0 +1,22 @@
+#include<stdio.h>
+#include<string.h>
+int main()
+{
+    // char s1[] ="SHARMIN SULTANA";
+    
+
+    // int len = strlen(s1);
+
+    // printf("Length = %d\n",len);
+
+    char s1[] = "Sharmin Sultana";
+
+    int i=0,len=0;
+    while(s1[i]!='\0')
+    {
+        i++;
+        len++;
+    }
+
+    printf("Length = %d\n",len);
+}

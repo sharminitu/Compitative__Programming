@@ -1,0 +1,45 @@
+#include<stdio.h>
+#include<string.h>
+int string_compare(char a[],char b[])
+{
+    int i,j;
+    for(i=0;a[i]!='\0'&&b[i]!='\0';i++)
+    {
+        if(a[i<b[i]]){
+            return -1;
+        }
+        if(a[i]>b[i])
+        {
+            return 1;
+        }
+    }
+    
+    if(string_length(a)==string_length(b))
+    {
+        return 0;
+    }
+    if (string_length(a) > string_length(b))
+    {
+        return 1;
+    }
+    if (string_length(a) < string_length(b))
+    {
+        return -1;
+    }
+}
+// int main()
+// {
+//     char a[]="Bangla", b[]="desh";
+//     int lena,lenb;
+//     int i,j;
+//     while(a[i]!='\0')
+//     {
+//         lena++;
+//         i++;
+//     }
+//     while(b[j]!='\0')
+//     {
+//         lenb++;
+//         i++;
+//     }
+// }
